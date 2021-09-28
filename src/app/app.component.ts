@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Book } from './interfaces/book.interface';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'bookmonkey-client';
+  title = 'Books are nice!';
+
+  book: Book = {
+    title: "Moby Dick",
+    author: "Hermann Melville",
+    abstract: "an abstract"
+  }
 }
