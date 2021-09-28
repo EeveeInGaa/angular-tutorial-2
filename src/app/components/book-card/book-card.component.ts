@@ -17,5 +17,11 @@ export class BookCardComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  
+  handleDetailClick(click: MouseEvent) {
+    click.preventDefault();
+    console.log('Click Details-Link:', click);
+
+  }
 
 }

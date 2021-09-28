@@ -1,4 +1,4 @@
 <p [style]="customStyle" >{{content.title}}</p>
 <p>{{content.author}}</p>
-<a href="">Details</a><br>
-<small>{{content.abstract}}</small>
+<a href="" (click)="handleDetailClick($event)">Details</a><br>
+<small>{{content.abstract}}</small><br>
