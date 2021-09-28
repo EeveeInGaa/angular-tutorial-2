@@ -9,11 +9,23 @@ import { Book } from './interfaces/book.interface';
 export class AppComponent {
   title = 'Books are nice!';
 
-  book: Book = {
-    title: "Moby Dick",
-    author: "Hermann Melville",
-    abstract: "an abstract"
-  }
+  books: Book[] = [
+    {
+      title: 'How to win friends',
+      author: 'Dale Carnegie',
+      abstract: "How to Win Friends and Influence ..."
+    },
+    {
+      title: 'The Willpower Instinct: How Self-Control Works ...',
+      author: 'Kelly McGonigal',
+      abstract: 'Based on Stanford University ...'
+    },
+    {
+      author: 'Simon Sinek',
+      title: 'Start with WHY',
+      abstract: "START WITH WHY shows that the leaders who've ..."
+    }
+  ];
 
   goToBookDetails(book: Book) {
     console.log('Navigate to book details, soon...');
